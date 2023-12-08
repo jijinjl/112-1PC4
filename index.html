@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstDiv{
+
+            width: 220px;
+            height: 220px;
+            border: 1px solid #FF0000;
+            position: relative;
+        }
+
+        .secondDiv{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .flash-element {
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            position: absolute;
+            animation: flash 2s infinite;
+        }
+
+        @keyframes flash{
+            0%{
+
+                opacity: 1;
+
+            }
+
+            50%{
+                opacity: 0;
+            }
+
+            100%{
+                opacity: 1;
+            }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="firstDiv">
+        <div class="secondDiv"></div>
+        <div class="flash-element"></div>
+    </div>
+</body>
+</html>
